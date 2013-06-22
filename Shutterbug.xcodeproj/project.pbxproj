@@ -19,6 +19,7 @@
 		02EC5D5317763D79009F1BA7 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02EC5D5117763D79009F1BA7 /* MainStoryboard.storyboard */; };
 		02EC5D5E17763EB5009F1BA7 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EC5D5D17763EB5009F1BA7 /* ImageViewController.m */; };
 		02EC5D611776418E009F1BA7 /* HawaiiImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EC5D601776418E009F1BA7 /* HawaiiImageViewController.m */; };
+		02EC5D6617764873009F1BA7 /* FlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EC5D6517764873009F1BA7 /* FlickrFetcher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,9 @@
 		02EC5D5D17763EB5009F1BA7 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		02EC5D5F1776418E009F1BA7 /* HawaiiImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HawaiiImageViewController.h; sourceTree = "<group>"; };
 		02EC5D601776418E009F1BA7 /* HawaiiImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HawaiiImageViewController.m; sourceTree = "<group>"; };
+		02EC5D6317764873009F1BA7 /* FlickrAPIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrAPIKey.h; sourceTree = "<group>"; };
+		02EC5D6417764873009F1BA7 /* FlickrFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrFetcher.h; sourceTree = "<group>"; };
+		02EC5D6517764873009F1BA7 /* FlickrFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrFetcher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,7 @@
 		02EC5D3F17763D79009F1BA7 /* Shutterbug */ = {
 			isa = PBXGroup;
 			children = (
+				02EC5D6217764873009F1BA7 /* FlickrFetcher */,
 				02EC5D5117763D79009F1BA7 /* MainStoryboard.storyboard */,
 				02EC5D5F1776418E009F1BA7 /* HawaiiImageViewController.h */,
 				02EC5D601776418E009F1BA7 /* HawaiiImageViewController.m */,
@@ -110,6 +115,16 @@
 				02EC5D4F17763D79009F1BA7 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		02EC5D6217764873009F1BA7 /* FlickrFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				02EC5D6317764873009F1BA7 /* FlickrAPIKey.h */,
+				02EC5D6417764873009F1BA7 /* FlickrFetcher.h */,
+				02EC5D6517764873009F1BA7 /* FlickrFetcher.m */,
+			);
+			path = FlickrFetcher;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +197,7 @@
 				02EC5D4A17763D79009F1BA7 /* AppDelegate.m in Sources */,
 				02EC5D5E17763EB5009F1BA7 /* ImageViewController.m in Sources */,
 				02EC5D611776418E009F1BA7 /* HawaiiImageViewController.m in Sources */,
+				02EC5D6617764873009F1BA7 /* FlickrFetcher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +320,7 @@
 				02EC5D5B17763D79009F1BA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
