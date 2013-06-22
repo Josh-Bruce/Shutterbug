@@ -17,6 +17,8 @@
 		02EC5D4E17763D79009F1BA7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02EC5D4D17763D79009F1BA7 /* Default@2x.png */; };
 		02EC5D5017763D79009F1BA7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02EC5D4F17763D79009F1BA7 /* Default-568h@2x.png */; };
 		02EC5D5317763D79009F1BA7 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02EC5D5117763D79009F1BA7 /* MainStoryboard.storyboard */; };
+		02EC5D5E17763EB5009F1BA7 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EC5D5D17763EB5009F1BA7 /* ImageViewController.m */; };
+		02EC5D611776418E009F1BA7 /* HawaiiImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EC5D601776418E009F1BA7 /* HawaiiImageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,10 @@
 		02EC5D4D17763D79009F1BA7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		02EC5D4F17763D79009F1BA7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		02EC5D5217763D79009F1BA7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		02EC5D5C17763EB5009F1BA7 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		02EC5D5D17763EB5009F1BA7 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		02EC5D5F1776418E009F1BA7 /* HawaiiImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HawaiiImageViewController.h; sourceTree = "<group>"; };
+		02EC5D601776418E009F1BA7 /* HawaiiImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HawaiiImageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,10 @@
 			isa = PBXGroup;
 			children = (
 				02EC5D5117763D79009F1BA7 /* MainStoryboard.storyboard */,
+				02EC5D5F1776418E009F1BA7 /* HawaiiImageViewController.h */,
+				02EC5D601776418E009F1BA7 /* HawaiiImageViewController.m */,
+				02EC5D5C17763EB5009F1BA7 /* ImageViewController.h */,
+				02EC5D5D17763EB5009F1BA7 /* ImageViewController.m */,
 				02EC5D4017763D79009F1BA7 /* Supporting Files */,
 			);
 			path = Shutterbug;
@@ -170,6 +180,8 @@
 			files = (
 				02EC5D4617763D79009F1BA7 /* main.m in Sources */,
 				02EC5D4A17763D79009F1BA7 /* AppDelegate.m in Sources */,
+				02EC5D5E17763EB5009F1BA7 /* ImageViewController.m in Sources */,
+				02EC5D611776418E009F1BA7 /* HawaiiImageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
