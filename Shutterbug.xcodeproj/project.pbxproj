@@ -20,6 +20,8 @@
 		02EC5D5E17763EB5009F1BA7 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EC5D5D17763EB5009F1BA7 /* ImageViewController.m */; };
 		02EC5D611776418E009F1BA7 /* HawaiiImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EC5D601776418E009F1BA7 /* HawaiiImageViewController.m */; };
 		02EC5D6617764873009F1BA7 /* FlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EC5D6517764873009F1BA7 /* FlickrFetcher.m */; };
+		02F991D8177795390045ED7F /* FlickrPhotoTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F991D7177795390045ED7F /* FlickrPhotoTVC.m */; };
+		02F991E11777985B0045ED7F /* LatestFlickrPhotosTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F991E01777985B0045ED7F /* LatestFlickrPhotosTVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,10 @@
 		02EC5D6317764873009F1BA7 /* FlickrAPIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrAPIKey.h; sourceTree = "<group>"; };
 		02EC5D6417764873009F1BA7 /* FlickrFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrFetcher.h; sourceTree = "<group>"; };
 		02EC5D6517764873009F1BA7 /* FlickrFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrFetcher.m; sourceTree = "<group>"; };
+		02F991D6177795390045ED7F /* FlickrPhotoTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhotoTVC.h; sourceTree = "<group>"; };
+		02F991D7177795390045ED7F /* FlickrPhotoTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotoTVC.m; sourceTree = "<group>"; };
+		02F991DF1777985B0045ED7F /* LatestFlickrPhotosTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LatestFlickrPhotosTVC.h; sourceTree = "<group>"; };
+		02F991E01777985B0045ED7F /* LatestFlickrPhotosTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LatestFlickrPhotosTVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,10 +98,14 @@
 			children = (
 				02EC5D6217764873009F1BA7 /* FlickrFetcher */,
 				02EC5D5117763D79009F1BA7 /* MainStoryboard.storyboard */,
+				02F991D6177795390045ED7F /* FlickrPhotoTVC.h */,
+				02F991D7177795390045ED7F /* FlickrPhotoTVC.m */,
 				02EC5D5F1776418E009F1BA7 /* HawaiiImageViewController.h */,
 				02EC5D601776418E009F1BA7 /* HawaiiImageViewController.m */,
 				02EC5D5C17763EB5009F1BA7 /* ImageViewController.h */,
 				02EC5D5D17763EB5009F1BA7 /* ImageViewController.m */,
+				02F991DF1777985B0045ED7F /* LatestFlickrPhotosTVC.h */,
+				02F991E01777985B0045ED7F /* LatestFlickrPhotosTVC.m */,
 				02EC5D4017763D79009F1BA7 /* Supporting Files */,
 			);
 			path = Shutterbug;
@@ -198,6 +208,8 @@
 				02EC5D5E17763EB5009F1BA7 /* ImageViewController.m in Sources */,
 				02EC5D611776418E009F1BA7 /* HawaiiImageViewController.m in Sources */,
 				02EC5D6617764873009F1BA7 /* FlickrFetcher.m in Sources */,
+				02F991D8177795390045ED7F /* FlickrPhotoTVC.m in Sources */,
+				02F991E11777985B0045ED7F /* LatestFlickrPhotosTVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
