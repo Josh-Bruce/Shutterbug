@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="0gS-x2-ico">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="bci-61-Dht">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -9,7 +9,7 @@
             <objects>
                 <tableViewController id="dio-v4-Wjj" customClass="LatestFlickrPhotosTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="QwG-RV-1ja">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -47,14 +47,14 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xxo-sv-a0Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="660" y="40"/>
+            <point key="canvasLocation" x="1186" y="40"/>
         </scene>
         <!--Image View Controller-->
         <scene sceneID="rOC-gQ-dCX">
             <objects>
                 <viewController id="wTV-TN-g8x" customClass="ImageViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w05-Li-S1P">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U6I-HH-6Ix"/>
@@ -74,12 +74,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gW8-sJ-Vg6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1094" y="40"/>
+            <point key="canvasLocation" x="1620" y="40"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="f54-lM-LPX">
             <objects>
                 <navigationController id="0gS-x2-ico" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="featured" id="cML-H8-y8b"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dgd-es-ofA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -92,7 +93,41 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SJ1-cR-UJx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="208" y="40"/>
+            <point key="canvasLocation" x="734" y="40"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="r0G-3N-0m2">
+            <objects>
+                <viewController id="aRy-0b-pRW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Jw-gB-U9G">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="recents" id="OHf-cE-FFs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GoP-QD-Jqo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="734" y="707"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="UKv-4s-Kc4">
+            <objects>
+                <tabBarController id="bci-61-Dht" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="HR1-8b-3Nc">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="0gS-x2-ico" kind="relationship" relationship="viewControllers" id="JhN-Jq-UKT"/>
+                        <segue destination="aRy-0b-pRW" kind="relationship" relationship="viewControllers" id="saN-lV-xK1"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MIi-Eq-f4x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104" y="321"/>
         </scene>
     </scenes>
     <classes>

@@ -18,7 +18,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	self.photos = [FlickrFetcher latestGeoreferencedPhotos];
+	self.photos = [FlickrFetcher stanfordPhotos];
 }
 
 @end
