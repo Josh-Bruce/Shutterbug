@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="bci-61-Dht">
     <dependencies>
+        <development version="4600" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--Latest Flickr PhotosTVC-->
+        <!--Latest Flickr PhotosTVC - SPoT-->
         <scene sceneID="yME-xL-mao">
             <objects>
                 <tableViewController id="dio-v4-Wjj" customClass="LatestFlickrPhotosTVC" sceneMemberID="viewController">
@@ -43,7 +44,7 @@
                             <outlet property="delegate" destination="dio-v4-Wjj" id="bA2-Hk-RKm"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="9tJ-xz-coM"/>
+                    <navigationItem key="navigationItem" title="SPoT" id="9tJ-xz-coM"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xxo-sv-a0Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -95,21 +96,6 @@
             </objects>
             <point key="canvasLocation" x="734" y="40"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="r0G-3N-0m2">
-            <objects>
-                <viewController id="aRy-0b-pRW" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9Jw-gB-U9G">
-                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" systemItem="recents" id="OHf-cE-FFs"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GoP-QD-Jqo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="734" y="707"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="UKv-4s-Kc4">
             <objects>
@@ -122,12 +108,61 @@
                     </tabBar>
                     <connections>
                         <segue destination="0gS-x2-ico" kind="relationship" relationship="viewControllers" id="JhN-Jq-UKT"/>
-                        <segue destination="aRy-0b-pRW" kind="relationship" relationship="viewControllers" id="saN-lV-xK1"/>
+                        <segue destination="tOv-h0-Zfp" kind="relationship" relationship="viewControllers" id="saN-lV-xK1"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MIi-Eq-f4x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="104" y="321"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uRr-Jc-L7a">
+            <objects>
+                <navigationController id="tOv-h0-Zfp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="recents" id="OHf-cE-FFs"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NRf-UL-BaF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vio-GF-fHE" kind="relationship" relationship="rootViewController" id="dX9-D4-Orh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VO1-uj-GjX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="734" y="707"/>
+        </scene>
+        <!--Table View Controller - Recents-->
+        <scene sceneID="TXw-9N-s6W">
+            <objects>
+                <tableViewController id="vio-GF-fHE" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="YyB-xA-uno">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="hl2-j7-OEH">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="vio-GF-fHE" id="xxX-vt-1RJ"/>
+                            <outlet property="delegate" destination="vio-GF-fHE" id="wm7-bb-qOt"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Recents" id="mVi-WW-5H9"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k5T-1E-8Uk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1186" y="707"/>
         </scene>
     </scenes>
     <classes>
